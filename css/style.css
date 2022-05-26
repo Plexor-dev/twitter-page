@@ -47,6 +47,17 @@ body {
     margin: 3rem 0 2rem 4.5rem;
     color: var(--twitter-blue);
     font-size: 4rem;
+    animation: rotate 1s 10s ease-in-out infinite alternate;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(20deg);
+    }
+
 }
 
 .header__title-container {
