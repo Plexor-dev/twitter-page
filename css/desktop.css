@@ -1,0 +1,61 @@
+* {
+    color: red;
+}
+
+.page {
+    display: grid;
+    width: 100%;
+    height: 90vh;
+    grid-template-areas:  "aside register"
+                          "aside register"
+                          "footer footer";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    place-self: center;
+}
+
+.header {
+    grid-area: register;
+}
+
+
+.header__logo {
+    margin-left: 40px;
+}
+
+.header__title-container {
+    margin-left: 40px;
+}
+
+
+.section__register-title {
+    margin-left: 40px;
+    font-size: 2rem;
+}
+
+
+
+.header__title span {
+    display: inline-block;
+}
+
+.background__twitter-blue {
+    grid-area: aside;
+    height: 100%;
+}
+
+.footer__container {
+    grid-area: footer;
+}
+
+.section {
+    width: 70%;
+}
+
+.or {
+    margin: 0 auto;
+}
+
+.or::after, .or::before {
+    content: ' ---------------------- ';
+}
